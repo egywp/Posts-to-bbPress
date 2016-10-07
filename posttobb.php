@@ -173,7 +173,6 @@ function posts_to_bbpress($to_forum, $authors, $delete_posts=false, $delete_comm
 				 'post_type' => 'topic',
 				 'post_name' => $item->post_name,
 				 'post_date' => $item->post_date,
-				 'post_date_gmt' => $item->post_date_gmt,
 				 'post_parent' => $to_forum
 			);      
 			wp_insert_post( $my_post ); //insert the topic
